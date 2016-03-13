@@ -1,0 +1,14 @@
+{
+  "name": "boajs-vdom",
+  "version": false,
+  "dependencies": {},
+  "ambientDependencies": {
+    "vdom-to-html": "github:bouzuya/my-dts/vdom-to-html/vdom-to-html.d.ts#d735250dcf9503affb1bde712ce08e773432cb09",
+    "vdom-virtualize": "github:bouzuya/my-dts/vdom-virtualize/vdom-virtualize.d.ts#ca780bca8a2184e366355a8fbbdcf3b07b1093dc",
+    "virtual-dom": "github:DefinitelyTyped/DefinitelyTyped/virtual-dom/virtual-dom.d.ts#df507c636cf0c799a8a20f35af89a3d0caae6c32"
+  },
+  "devDependencies": {
+    "proxyquire": "registry:npm/proxyquire#1.0.0+20160211003958",
+    "sinon": "registry:npm/sinon#1.16.0+20160309002336"
+  }
+}
