@@ -26,7 +26,8 @@ const makeRender = (r: RDOM, v: VDOM): Render => {
   };
 };
 
-const init = ({ root }: { root: RDOM }): Render => {
+const init = (options: { root: RDOM }): Render => {
+  const { root } = options;
   const rdom: RDOM = root;
   const vdom: VDOM = parse(rdom);
   return makeRender(rdom, vdom);
