@@ -4,6 +4,12 @@ A virtual dom library for [bouzuya/b-o-a][] using [Matt-Esch/virtual-dom][].
 
 [Matt-Esch/virtual-dom]: https://github.com/Matt-Esch/virtual-dom
 
+## Installation
+
+```
+$ npm install boajs-vdom
+```
+
 ## Usage
 
 ```typescript
