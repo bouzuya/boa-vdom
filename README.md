@@ -4,6 +4,61 @@ A virtual dom library for [bouzuya/b-o-a][] using [Matt-Esch/virtual-dom][].
 
 [Matt-Esch/virtual-dom]: https://github.com/Matt-Esch/virtual-dom
 
+## Usage
+
+```typescript
+// VDOM
+import { create as h } from 'boajs-vdom';
+
+const vdom1 = h('div#app', [
+  h('p', ['hello'])
+]);
+const vdom2 = h('div#app', [
+  h('p', ['world'])
+]);
+```
+
+```typescript
+// render to HTML
+import { HTML } from 'boajs-vdom';
+const { init } = HTML;
+
+// See: VDOM ...
+const vdom1 = /* ... */;
+const vdom2 = /* ... */;
+
+const render1 = init();
+const {
+  result as html1,
+  render as render2
+} = render1(vdom1); // render to html1
+const {
+  result as html2,
+  render as render3
+} = render2(vdom2); // render to html2
+```
+
+```typescript
+// DOM
+import { DOM } from 'boajs-vdom';
+const { init } = DOM;
+
+// See: VDOM ...
+const vdom1 = /* ... */;
+const vdom2 = /* ... */;
+
+const root = document.querySelector('div#app');
+const render1 = init({ root }); // (parse root)
+const {
+  result as rdom1,
+  render as render2
+} = render1(vdom1); // render vdom1 to rdom1 (root)
+const {
+  result as rdom2,
+  render as render3
+} = render2(vdom2); // render vdom2 to rdom2 (root)
+```
+
 ## Badges
 
 [![Circle CI][circleci-badge-url]][circleci-url]
