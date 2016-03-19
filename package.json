@@ -1,5 +1,5 @@
 {
-  "name": "boajs-vdom",
+  "name": "boa-vdom",
   "description": "A virtual dom library for b-o-a",
   "version": "0.1.1",
   "author": {
@@ -16,7 +16,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/bouzuya/boajs-vdom/issues"
+    "url": "https://github.com/bouzuya/boa-vdom/issues"
   },
   "dependencies": {
     "vdom-to-html": "2.2.0",
@@ -35,13 +35,13 @@
   "files": [
     "lib"
   ],
-  "homepage": "https://github.com/bouzuya/boajs-vdom#readme",
+  "homepage": "https://github.com/bouzuya/boa-vdom#readme",
   "keywords": [],
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/boajs-vdom"
+    "url": "https://github.com/bouzuya/boa-vdom"
   },
   "scripts": {
     "build": "tsc && npm run cp",
